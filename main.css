@@ -48,6 +48,17 @@ footer {
     width: 100%;
 }
 
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.services li {
+    background-color: whitesmoke;
+    padding: 20px 10px;
+}
+
 .map {
     margin: auto;
     height: 200px;
