@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav ul, footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: white;
+}
+
+header {
+    margin-top: 20px;
+    background: darkgrey;
+    padding: 10px;
+}
+
+section{
+    padding: 20px;
+}
+
+section:nth-child(odd) {
+    background-color: lightgray;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.map {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+}
+
+.requests li, .requests a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.details div {
+    margin: auto;
+}
+
+.details div div{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.answer {
+    max-width: 50%;
+    text-align: right;
+}

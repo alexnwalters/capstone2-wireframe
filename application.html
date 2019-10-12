@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <title>Dog Day Care - Application</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./homepage.html">Welcome</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./application.html">Apply</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Application</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Name:
+                    <input type="text" name="contact_name" required/>
+                </label>
+                <label>Email:
+                    <input type="email" name="email" required/>
+                </label>
+                <label>Phone:
+                    <input type="tel"
+                        name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required>
+                    <small>Format: 123-456-7890</small>
+                </label>
+                <label>Which service are you inquiring about today?
+                    <input type="radio" name="service" value="Day Care" required/> Day Care<br>
+                    <input type="radio" name="service" value="Overnight Care"/> Overnight Care
+                </label>
+                <label> Date for Care:
+                    <input type="date" name="care_date" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dog Information</legend>
+                <label>Name:
+                    <input type="text" name="dog_name" required />
+                </label>
+                <label>Breed:
+                    <input type="text" name="breed" required />
+                </label>
+                <label>Age:
+                    <input type="number" name="age_yrs" min="0" max="30" placeholder="0" required/> yrs.
+                    <input type='number' name="age_mos" min="0" max="12" placeholder="0" required/> mos.
+                </label>
+                <label>Sex:
+                    <input type="radio" name="sex" value="male"/> Male<br>
+                    <input type="radio" name="sex" value="female"/> Female
+                </label>
+                <label>Has your dog been Spayed or Neutered:
+                    <input type="radio" name="spayed" value="yes" required/> Yes<br>
+                    <input type="radio" name="spayed" value="no"/> No
+                </label>
+                <label>Month of last annual vet exam?
+                    <input type="month" name="exam" required/>
+                </label>
+                <label>Is current on all vaccinations?
+                    <small>*we require vaccinations against rabies, DHLPPC, and Bordetella</small>
+                    <input type="radio" name="vaccines" value="yes" required/> Yes<br>
+                    <input type="radio" name="vaccines" value="no"/> No
+                </label>
+                <label>Describe any other medical history of note. 
+                    <input type='text' name="medical"/> 
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Behavioral Information</legend>
+                <label>Has your dog ever attended day care or been boarded overnight?
+                    <input type="radio" name="prior_care" value="yes"/> Yes
+                    <input type="radio" name="prior_care" value="no"/> No<br>
+                </label>
+                <label>Is your dog crate trained?
+                    <input type="radio" name="crate" value="yes"/> Yes
+                    <input type="radio" name="crate" value="no"/> No<br>
+                </label>
+                <label>Has your dog ever broken out of a crate or jumped a fence?
+                    <input type="radio" name="escape" value="yes"/> Yes
+                    <input type="radio" name="escape" value="no"/> No<br>
+                </label>
+                <label>Do you have any other pets in your home?
+                    <input type="radio" name="other_pets" value="yes"/> Yes
+                    <input type="radio" name="other_pets" value="no"/> No<br>
+                </label>
+                <label>Has your dog ever shown aggression to your other pets?
+                    <input type="radio" name="aggression" value="yes"/> Yes
+                    <input type="radio" name="aggression" value="no"/> No<br>
+                </label>
+                <label>Does your dog growl when thier food, bones, or toys are taken away?
+                    <input type="radio" name="growl" value="yes"/> Yes
+                    <input type="radio" name="growl" value="no"/> No<br>
+                </label>
+                <label>Does your dog growl when thier food, bones, or toys are approached by other dogs?
+                    <input type="radio" name="growl_other" value="yes"/> Yes
+                    <input type="radio" name="growl_other" value="no"/> No<br>
+                </label>
+                <label>Has your dog ever bitten another dog or human?
+                    <input type="radio" name="bite" value="yes"/> Yes
+                    <input type="radio" name="bite" value="no"/> No<br>
+                </label>
+                <label>If the bite broke the skin, describe the circumstance?
+                    <input type="text" name="bite_details"/>
+                </label>
+                <label>How does your dog react to children?
+                    <input type="text" name="children"/>
+                </label>
+                <label>How does your dog react to visitors?
+                    <input type="text" name="visitors"/>
+                </label>
+                <label>How does your dog react to your absence?
+                    <input type="text" name="absent"/>
+                </label>
+            </fieldset>
+            <input type="submit" />
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Email</li>
+            <li><a href='./login.html'>Admin Login</a></li>
+        </ul>
+        <p>123 Dog Street, Dogtown, MD 11111</p>
+    </footer>
+</body>
+</html>
